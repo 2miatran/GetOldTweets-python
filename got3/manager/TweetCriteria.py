@@ -30,3 +30,21 @@ class TweetCriteria:
 	def setTopTweets(self, topTweets):
  		self.topTweets = topTweets
  		return self
+	def setEmoji(self, Emoji):
+		"""Set emoji style. Style must be one of 'ignore', 'unicode', or 'name'.
+		Parameters
+		----------
+		Emoji : str
+		"""
+		self.emoji = Emoji
+		return self
+   
+	def setExcludeWords(self, excludeWords):
+		"""Set word(s) to exclude from tweets
+		Parameters
+		----------
+		excludeWords : list or iterable
+		Example: ["red", "blue", "yellow", "green"]
+		"""
+		self.excludeWords = excludeWords
+		return self
